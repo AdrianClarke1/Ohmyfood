@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.location {
+    position: relative;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: $light-grey;
+    padding: 20px 0;
+
+        & i, p {
+        padding:0 10px;
+        font-size: 20px;
+        } 
+
+        & p {
+        font-weight: 500;
+        color: $mid-grey;
+        }
+
+}
