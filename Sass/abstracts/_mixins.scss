@@ -3,4 +3,19 @@
 // -----------------------------------------------------------------------------
 
 
+@mixin btn-pink {
 
+    background: linear-gradient(170deg, $secondary-color, $primary-color);
+    border: none;
+    color: white;
+    width: 220px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@mixin drop-shadow {
+    box-shadow: 0px 4px 12px -6px $mid-grey;
+
+}

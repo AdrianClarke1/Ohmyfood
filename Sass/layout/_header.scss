@@ -3,15 +3,14 @@
 // -----------------------------------------------------------------------------
 
 header {
-box-shadow: 0px 2px 10px -6px $mid-grey;
-z-index: z;
+    box-shadow: 0px 2px 10px -6px $mid-grey;
+    z-index: z;
 
-    &  img {
+    & img {
         display: block;
         width: 200px;
         height: auto;
         margin: auto;
         padding: 30px 0;
-        }
+    }
 }
-   

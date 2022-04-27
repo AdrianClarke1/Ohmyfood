@@ -3,23 +3,126 @@
 // -----------------------------------------------------------------------------
 
 .location {
-    position: relative;
-    z-index: -1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: $light-grey;
-    padding: 20px 0;
+        position: relative;
+        z-index: -1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: $light-grey;
+        padding: 20px 0;
 
-        & i, p {
-        padding:0 10px;
-        font-size: 20px;
-        } 
-
-        & p {
-        font-weight: 500;
-        color: $mid-grey;
+        & i,
+        p {
+                padding: 0 10px;
+                font-size: 20px;
         }
 
+        & p {
+                font-weight: 500;
+                color: $mid-grey;
+        }
+}
+
+.menu_exploration {
+        background-color: $super-light-grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        & h1 {
+                margin: 40px 0 20px 0;
+                font-size: 28px;
+                font-weight: 700;
+                width: 70%;
+                text-align: center;
+                color: $dark-grey;
+        }
+
+        & p {
+                font-size: 20px;
+                font-weight: 300;
+                width: 80%;
+                color: $mid-grey;
+                text-align: center;
+        }
+
+        & .btn_exploration {
+                margin: 30px 0 60px 0;
+                @include btn-pink;
+                @include drop-shadow;
+                transform: scale(1);
+
+                &:hover {
+                        cursor: pointer;
+                        transition: transform 200ms ease, box-shadow 200ms ease;
+                        transform: scale(1.05);
+                        box-shadow: 0px 8px 20px -8px $mid-grey;
+                }
+        }
+}
+
+.instructions {
+        width: 90%;
+        height: 500px;
+        margin: 50px auto;
+
+        &_step {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                background-color: $super-light-grey;
+                height: 80px;
+                margin: 30px 15px;
+                border-radius: 20px;
+                @include drop-shadow;
+
+
+                & span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        position: absolute;
+                        top: 50%;
+                        left: -15px;
+                        transform: translate(0, -50%);
+
+                        background-color: $primary-color;
+                        color: white;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                }
+
+                & i {
+                        width: 10px;
+                        font-size: 20px;
+                        margin: auto;
+                        color: $mid-grey;
+
+                }
+
+                & p {
+                        width: 80%;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: $dark-grey;
+                }
+
+                &:hover {
+                        transition: background-color 200ms ease;
+                        background: lighten($primary-color, 36%);
+
+                        & i {
+                                color: $primary-color;
+                        }
+                }
+
+
+
+        }
 }
