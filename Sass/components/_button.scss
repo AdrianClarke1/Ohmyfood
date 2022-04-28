@@ -1,3 +1,89 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+// BUTTON MAIN 
+
+.btn-pink {
+    @include btn-pink;
+    @include drop-shadow;
+    transform: scale(1);
+
+    &:not(:hover) {
+        animation: btn-hover 1s ease 2s 1 normal forwards;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        transition: transform 200ms ease-in-out;
+    }
+}
+
+
+// INSTRUCTION STEPS 
+
+.instructions_step {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: $super-light-grey;
+    height: 80px;
+    margin: 30px 15px;
+    border-radius: 20px;
+    @include drop-shadow;
+
+
+    & span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 50%;
+        left: -15px;
+        transform: translate(0, -50%);
+
+        background-color: $primary-color;
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+
+    & i {
+        width: 10px;
+        font-size: 20px;
+        margin: auto;
+        color: $mid-grey;
+
+    }
+
+    & p {
+        width: 80%;
+        font-size: 18px;
+        font-weight: 500;
+        color: $dark-grey;
+    }
+
+    &:nth-child(4) {
+        background: lighten($primary-color, 36%);
+
+        & i {
+            color: $primary-color;
+        }
+    }
+}
+
+// BUTTON NEW 
+
+.btn_new {
+    background-color: $third-color;
+    color: darken($third-color, 40%);
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 400;
+
+}

@@ -1,0 +1,26 @@
+@media (min-width: 902px) {
+
+    .instructions {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+
+        & h2 {
+            width: 100%;
+        }
+
+        &_step {
+            width: 25%;
+
+            & p {
+                width: 70%;
+                font-size: 16px;
+                margin: 5px;
+            }
+        }
+    }
+
+}
