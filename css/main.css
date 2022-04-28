@@ -197,6 +197,37 @@ header img {
   padding: 30px 0;
 }
 
+.footer {
+  background: #4a4a4a;
+  padding: 20px;
+}
+
+.footer img {
+  width: 100px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.footer a {
+  margin: 10px 0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer a i {
+  width: 30px;
+}
+
+.footer a:hover {
+  color: #FF79DA;
+}
+
 .btn-pink {
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   border: none;
@@ -356,6 +387,7 @@ header img {
 }
 
 .restaurant_article i:hover {
+  cursor: pointer;
   -webkit-animation: hearthover 2s ease 0s infinite normal forwards;
           animation: hearthover 2s ease 0s infinite normal forwards;
 }
