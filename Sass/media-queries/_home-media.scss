@@ -1,4 +1,4 @@
-@media (min-width: 902px) {
+@media (min-width: 992px) {
 
     .instructions {
 
@@ -20,6 +20,20 @@
                 font-size: 16px;
                 margin: 5px;
             }
+        }
+    }
+
+    .restaurants_container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        & h2 {
+            width: 100%;
+        }
+
+        & .restaurant_article {
+            width: 48%;
         }
     }
 

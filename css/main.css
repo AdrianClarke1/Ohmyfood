@@ -461,7 +461,7 @@ header img {
   margin: 40px 0 20px 0;
 }
 
-@media (min-width: 902px) {
+@media (min-width: 992px) {
   .instructions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -487,5 +487,22 @@ header img {
     width: 70%;
     font-size: 16px;
     margin: 5px;
+  }
+  .restaurants_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .restaurants_container h2 {
+    width: 100%;
+  }
+  .restaurants_container .restaurant_article {
+    width: 48%;
   }
 }
