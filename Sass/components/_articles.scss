@@ -47,23 +47,4 @@
         }
     }
 
-    & i {
-        @include btn-heart;
-        color: $mid-grey;
-
-        &:hover {
-
-            cursor: pointer;
-            animation: hearthover 2s ease 0s infinite normal forwards;
-        }
-
-        &:active {
-            animation: heart-is-liked 2s ease 0s 1 normal forwards;
-
-
-        }
-
-
-    }
-
 }

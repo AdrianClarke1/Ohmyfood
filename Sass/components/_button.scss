@@ -7,15 +7,13 @@
 .btn-pink {
     @include btn-pink;
     @include drop-shadow;
-    transform: scale(1);
 
     &:not(:hover) {
-        animation: btn-hover 1s ease 2s 1 normal forwards;
+        animation: btn-grab-attention 1s ease 2s 1 normal forwards;
     }
 
     &:hover {
-        transform: scale(1.05);
-        transition: transform 200ms ease-in-out;
+        animation: btn-hover 200ms ease-in 1 normal forwards;
     }
 }
 
@@ -86,4 +84,21 @@
     font-size: 16px;
     font-weight: 400;
 
+}
+
+// LIKE BUTTON SHAPE OF A HEART
+
+.btn_heart {
+    @include btn-heart;
+    color: $mid-grey;
+
+    &:hover {
+        cursor: pointer;
+        animation: hearthover 2s ease 0s infinite normal forwards;
+    }
+
+    &:active {
+        cursor: pointer;
+        animation: heart-is-liked 2s ease 0s 1 normal forwards;
+    }
 }

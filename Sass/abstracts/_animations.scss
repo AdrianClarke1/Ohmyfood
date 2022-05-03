@@ -1,4 +1,6 @@
-@keyframes btn-hover {
+// ANIMATION FOR BUTTON MAIN
+
+@keyframes btn-grab-attention {
     0% {
         transform: scale(1);
     }
@@ -11,6 +13,23 @@
         transform: scale(1);
     }
 }
+
+@keyframes btn-hover {
+    0% {
+        box-shadow: 0px 4px 12px -6px $mid-grey;
+        opacity: 100%;
+        transform: scale(1);
+    }
+
+    100% {
+        box-shadow: 0px 6px 16px -4px $mid-grey;
+        opacity: 95%;
+        transform: scale(1.05);
+    }
+}
+
+
+// ANIMATION FOR LIKE BUTTON IN SHAOE OF A HEART
 
 @keyframes hearthover {
     0% {
@@ -44,7 +63,9 @@
 
 @keyframes heart-is-liked {
     0% {
-        color: $mid-grey;
+        background: linear-gradient(170deg, $secondary-color, $primary-color);
+        -webkit-background-clip: text;
+        color: transparent;
         transform: scale3d(1, 1, 1);
     }
 
@@ -69,7 +90,9 @@
     }
 
     100% {
-        color: $primary-color;
+        background: linear-gradient(170deg, $secondary-color, $primary-color);
+        -webkit-background-clip: text;
+        color: transparent;
         transform: scale3d(1, 1, 1);
     }
 }
