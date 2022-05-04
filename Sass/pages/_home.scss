@@ -4,24 +4,33 @@
 
 .location {
         position: relative;
-
+        z-index: 1;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         background-color: $light-grey;
-        padding: 20px 0;
+        padding: 10px 0;
 
-        & i,
-        p {
-                padding: 0 10px;
+        & label {
+                font-size: 22px;
+                margin-left: 50px;
+        }
+
+        & input {
+                border: none;
+                background-color: $light-grey;
                 font-size: 20px;
+                font-weight: 600;
+                text-align: center;
+                padding: 10px 0;
+
+                &:focus {
+                        outline: none;
+                }
         }
 
-        & p {
-                font-weight: 500;
-                color: $mid-grey;
-        }
+
 }
 
 .menu_exploration {
