@@ -13,8 +13,6 @@ img {
     flex-direction: row;
     align-items: center;
     position: relative;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
 
     & h2 {
         font-family: 'shrikhand', cursive;
@@ -30,16 +28,6 @@ img {
     & h3 {
         font-size: 18px;
         color: $mid-grey;
-
-        // &::before {
-        //     content: "";
-        //     position: absolute;
-        //     left: 2%;
-        //     bottom: 110px;
-        //     width: 40px;
-        //     border-bottom: 2px solid $third-color;
-        // }
-
     }
 
     & hr {

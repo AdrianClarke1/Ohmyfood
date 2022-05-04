@@ -22,13 +22,3 @@
 
 
 //HEART BUTTON
-
-@mixin btn-heart {
-    position: absolute;
-    bottom: 5%;
-    right: 2%;
-    font-size: 30px;
-    margin: 20px;
-    color: $dark-grey;
-    transform: translate(0%, 0%);
-}

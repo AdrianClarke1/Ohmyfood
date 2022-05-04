@@ -89,16 +89,16 @@
 // LIKE BUTTON SHAPE OF A HEART
 
 .btn_heart {
-    @include btn-heart;
+    font-size: 30px;
+    margin: 20px 25px;
     color: $mid-grey;
+}
+
+.is-liked {
+    opacity: 0%;
 
     &:hover {
         cursor: pointer;
-        animation: hearthover 2s ease 0s infinite normal forwards;
-    }
-
-    &:active {
-        cursor: pointer;
-        animation: heart-is-liked 2s ease 0s 1 normal forwards;
+        animation: heart-is-liked 300ms ease 0s 1 normal forwards;
     }
 }
