@@ -7,11 +7,27 @@ header {
     position: relative;
     z-index: 2;
 
-    & img {
-        display: block;
-        width: 200px;
-        height: auto;
-        margin: auto;
-        padding: 20px 0;
+    & nav {
+        background-color: white;
+        position: relative;
+        height: 70px;
+
+        & img {
+            width: 200px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        & i {
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 8%;
+            transform: translate(-50%, -50%);
+            color: $dark-grey;
+        }
     }
 }

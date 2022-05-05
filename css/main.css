@@ -126,12 +126,30 @@ header {
   z-index: 2;
 }
 
-header img {
-  display: block;
+header nav {
+  background-color: white;
+  position: relative;
+  height: 70px;
+}
+
+header nav img {
   width: 200px;
   height: auto;
-  margin: auto;
-  padding: 20px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header nav i {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #121212;
 }
 
 .footer {
