@@ -2,6 +2,20 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+//LOADONG SPINNER
+
+@mixin loader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 3;
+}
+
+
 //BUTTON PINK
 
 @mixin btn-pink {

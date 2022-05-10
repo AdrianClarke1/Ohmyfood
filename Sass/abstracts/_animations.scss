@@ -51,3 +51,41 @@
 
     }
 }
+
+
+// ANIMATION FOR LOADING SPINNER 
+
+@keyframes loader {
+
+    from {
+        opacity: 100%;
+        visibility: visible;
+        transform: rotate(0turn);
+    }
+
+    to {
+        opacity: 100%;
+        visibility: visible;
+        transform: rotate(1turn);
+    }
+
+}
+
+@keyframes loader-visibility {
+    0% {
+        opacity: 100%;
+        visibility: visible;
+    }
+
+    80% {
+        opacity: 100%;
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 0%;
+        visibility: visible;
+    }
+
+
+}

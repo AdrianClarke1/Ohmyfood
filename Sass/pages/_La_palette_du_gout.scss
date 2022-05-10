@@ -1,4 +1,4 @@
-main {
+body {
     background-color: $super-light-grey;
 
 }
@@ -38,7 +38,8 @@ main {
 
 .menu_container {
     width: 92%;
-    margin: 40px auto;
+    margin: 40px auto 0 auto;
+    height: auto;
 
     & h2 {
         font-size: 18px;

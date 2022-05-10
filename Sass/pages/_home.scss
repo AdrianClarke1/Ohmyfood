@@ -2,6 +2,25 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
+.loader {
+        @include loader;
+        opacity: 0%;
+        visibility: hidden;
+        animation: loader-visibility 2s ease;
+
+        &::after {
+                content: "";
+                width: 125px;
+                height: 125px;
+                border: 15px solid white;
+                border-top-color: $primary-color;
+                border-right-color: $primary-color;
+                border-radius: 50%;
+                animation: loader 1s ease infinite;
+        }
+}
+
+
 .location {
         position: relative;
         z-index: 1;
