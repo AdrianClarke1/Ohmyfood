@@ -30,6 +30,11 @@ body {
             font-size: 28px;
             font-family: 'shrikhand', cursive;
             color: $dark-grey;
+            overflow: hidden;
+        }
+
+        & i {
+            right: 5%;
         }
 
     }

@@ -160,6 +160,32 @@
   }
 }
 
+@-webkit-keyframes arrow-back-to-home {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-90%, -50%);
+            transform: translate(-90%, -50%);
+  }
+}
+
+@keyframes arrow-back-to-home {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-90%, -50%);
+            transform: translate(-90%, -50%);
+  }
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -212,6 +238,11 @@ header nav i {
   color: #121212;
 }
 
+header nav i:hover {
+  -webkit-animation: arrow-back-to-home 1s ease 0s 1 normal forwards;
+          animation: arrow-back-to-home 1s ease 0s 1 normal forwards;
+}
+
 .footer {
   background: #4a4a4a;
   padding: 20px;
@@ -251,7 +282,16 @@ header nav i {
   height: 50px;
   border-radius: 25px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-shadow: 0px 4px 12px -4px #7D7D7D;
           box-shadow: 0px 4px 12px -4px #7D7D7D;
 }
@@ -278,7 +318,7 @@ header nav i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F7F7F7;
+  background-color: #EDEDED;
   height: 80px;
   margin: 30px 15px;
   border-radius: 20px;
@@ -343,6 +383,7 @@ header nav i {
   font-size: 30px;
   margin: 20px 25px;
   color: #7D7D7D;
+  position: absolute;
 }
 
 .is-liked {
@@ -418,7 +459,6 @@ header nav i {
 }
 
 .restaurant_article i {
-  position: absolute;
   right: 2%;
   bottom: 5%;
 }
@@ -601,6 +641,11 @@ body {
   font-size: 28px;
   font-family: 'shrikhand', cursive;
   color: #121212;
+  overflow: hidden;
+}
+
+.main_title_container .main_title i {
+  right: 5%;
 }
 
 .menu_container {
@@ -701,5 +746,11 @@ body {
   }
   .restaurants_container .restaurant_article {
     width: 48%;
+  }
+}
+
+@media (max-width: 370px) {
+  .main_title_container h1 {
+    color: wheat;
   }
 }

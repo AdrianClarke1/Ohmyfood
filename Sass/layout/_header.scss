@@ -28,6 +28,10 @@ header {
             left: 8%;
             transform: translate(-50%, -50%);
             color: $dark-grey;
+
+            &:hover {
+                animation: arrow-back-to-home 1s ease 0s 1 normal forwards;
+            }
         }
     }
 }
