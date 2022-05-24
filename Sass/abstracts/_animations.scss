@@ -103,3 +103,18 @@
 
     }
 }
+
+
+// DROPDOWN MENU ANIMATION 
+
+@keyframes menu-dropdown {
+    0% {
+        opacity: 0%;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}

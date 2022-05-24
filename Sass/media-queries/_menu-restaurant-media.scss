@@ -1,6 +1,15 @@
-@media (max-width: 370px) {
+@media (min-width: 768px) {
 
-    .main_title_container h1 {
-        color: wheat;
+    .menu_container_parent {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .menu_container {
+            width: 30%;
+            display: inline-block;
+            margin: 1%;
+        }
     }
 }
