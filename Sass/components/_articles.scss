@@ -18,6 +18,13 @@
     @include drop-shadow;
     background-color: white;
 
+    &:hover {
+        img {
+            opacity: 70%;
+        }
+    }
+
+
     a {
         width: 100%;
 

@@ -453,6 +453,10 @@ header nav i:hover {
   background-color: white;
 }
 
+.restaurant_article:hover img {
+  opacity: 70%;
+}
+
 .restaurant_article a {
   width: 100%;
 }
